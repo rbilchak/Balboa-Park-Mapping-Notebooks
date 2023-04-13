@@ -16,6 +16,31 @@ Relevance: This method will take the 1989 Master Plan and overlay it with the mo
 
 Relevance: This method will examine the park's accessibility through public transportation. In order to increase the utilization of the park by local communities it needs to be accessible. If the new plan intends on removing parking spaces, park utilization will decline of accessibilty is low. 
 
+1. Install the necessary libraries: To use isochrone data, you will need to install the following libraries:
+
+osmnx: to download OpenStreetMap data for San Diego
+
+networkx: to analyze the network
+
+pandas: to manipulate data
+
+geopandas: to work with spatial data
+
+pyproj: to convert between coordinate systems
+
+folium: to create interactive maps
+
+You can install these libraries using !pip install.
+
+
+2. Download OpenStreetMap data for San Diego: You can use the osmnx library to download the OpenStreetMap data for San Diego. The following code will download the data for San Diego and extract the street network
+
+3. Generate isochrone data: You can use the osmnx library to generate isochrone data. The following code will generate isochrones for Balboa Park for travel times of 5, 10, 15, 20, and 25 minutes using public transportation
+
+4. Prepare the data for mapping: You can use geopandas to merge the isochrone data with the street network data and prepare the data for mapping. The following code will merge the isochrone data with the street network data and convert the data to the appropriate coordinate system
+
+5. Create an interactive map: You can use folium to create an interactive map of the isochrone data. The following code will create an interactive map of the isochrone data for Balboa Park:
+
 ## 4. Slope Analysis 
 
 Relevance: Specifically requested by SAGE, this method will help determine the future development of the park. In coordination with the viewshed analysis, slope analysis will allow developers to discover what areas are accessible through walking, biking, or cars. Thus slope analysis can give insight on what time of development can occur throughout the park. 
