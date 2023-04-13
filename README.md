@@ -19,3 +19,38 @@ Relevance: This method will examine the park's accessibility through public tran
 ## 4. Slope Analysis 
 
 Relevance: Specifically requested by SAGE, this method will help determine the future development of the park. In coordination with the viewshed analysis, slope analysis will allow developers to discover what areas are accessible through walking, biking, or cars. Thus slope analysis can give insight on what time of development can occur throughout the park. 
+
+1. Acquire the elevation data for Balboa Park: The first step is to acquire the elevation data for Balboa Park. You can obtain this data from various sources such as USGS National Map or OpenTopography. You can also use Python libraries such as rasterio or GDAL to download the data programmatically.
+
+2. Preprocessing the data: Once you have acquired the data, you will need to preprocess it before performing the slope analysis. This includes converting the data to a suitable format (e.g., GeoTIFF) and projecting it to a standard coordinate reference system (CRS) such as WGS 84.
+
+3. Calculating slope: Next, you will need to calculate the slope of the terrain. You can do this by using the gdaldem command line tool or by using Python libraries such as rasterio or GDAL. The slope is typically calculated in degrees or percent rise.
+
+4. Comparing previous and new slope: Once you have calculated the slope for Balboa Park, you can compare the previous and new slope by calculating the difference between the two. You can do this by subtracting the previous slope from the new slope and plotting the difference on a map.
+
+# code: 
+
+import rasterio
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Load the elevation data
+with rasterio.open('balboa_park.tif') as src:
+    elev_data = src.read(1)
+
+# Calculate slope using rasterio
+res = src.res[0]
+slope = np.arctan(np.sqrt(np.square(src.dtypes[0](np.gradient(elev_data, res)[0])) + np.square(src.dtypes[0](np.gradient(elev_data, res)[1]))))
+slope = np.degrees(slope)
+
+# Calculate previous slope (assuming you have the data)
+prev_slope = ...
+
+# Calculate difference between slopes
+slope_diff = slope - prev_slope
+
+# Plot difference map
+plt.imshow(slope_diff, cmap='coolwarm')
+plt.colorbar()
+plt.title('Difference in Slope')
+plt.show()
