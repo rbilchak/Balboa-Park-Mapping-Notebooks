@@ -8,6 +8,8 @@ Relevance: This method of analysis identifies all possible viewpoints from a spe
 
 [ArcGIS Interactive Viewshed Directions/Application](https://doc.arcgis.com/en/arcgis-earth/use/interactive-analysis.htm#:~:text=Viewshed%20analysis%20indicates%20the%20visibility%20%28visible%20or%20obstructed%29,in%20the%20scene%20to%20specify%20the%20observer%20position.)
 
+Using QGIS 
+
 ## 2. Economic Analysis 
 
 Relevance: This method will take the 1989 Master Plan and overlay it with the most up-to-date map we have in order to assess the economic standing of the neighborhood and how the creation of the park has effected the surrounding community. 
