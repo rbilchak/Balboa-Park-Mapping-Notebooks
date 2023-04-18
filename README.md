@@ -13,6 +13,7 @@ This method of analysis identifies all possible viewpoints from a specific locat
 
 [The JavaScript library used to create a map and perform viewshed analysis](https://github.com/mmurillo4410/viewshed)
 
+Viewshed Analysis (In-class notes)
 1. Download [QGIS](https://www.qgis.org/en/site/) Open Source Geographic Information System 
     QGIS: Used for multiple purposes including: 
         - line of sight 
@@ -32,6 +33,10 @@ This method of analysis identifies all possible viewpoints from a specific locat
 ## 2. Economic Analysis 
 
 Relevance: This method will take the 1989 Master Plan and overlay it with the most up-to-date map we have in order to assess the economic standing of the neighborhood and how the creation of the park has effected the surrounding community. 
+
+Population/Employment Data: (In-class notes)
+1. Use the 0404.sd_transite notes in Jupyter 
+2. Iodes: Population/employment data that we subsetted only for San Diego. Then, we imported this data with the "test origin code"
 
 ## 3. Isochrone Analysis
 
