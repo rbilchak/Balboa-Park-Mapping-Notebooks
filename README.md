@@ -13,6 +13,22 @@ This method of analysis identifies all possible viewpoints from a specific locat
 
 [The JavaScript library used to create a map and perform viewshed analysis](https://github.com/mmurillo4410/viewshed)
 
+1. Download [QGIS](https://www.qgis.org/en/site/) Open Source Geographic Information System 
+    QGIS: Used for multiple purposes including: 
+        - line of sight 
+        - develop estimates of viewpoints 
+2. Install Visibility Analysis to QGIS
+3. Go to [USGS](https://www.usgs.gov/programs/national-geospatial-program/national-map) to search region of interest and obtain the dataset
+4. On USGS National Map Website, search Balboa Park. This will locate the data sets that cover the Digital Elevation Model (DEM) and produce an image to overlay into QGIS. 
+5. Figure out your radius and number of viewpoints 
+6. Figure out local viewsheds that are visible from the park, by using the default, basic model. This basic model views buildings and does not include vegetation. To include vegetation, the LIDAR program is needed, which is a limitation we have due to time and access. 
+7. Save your project on your desktop
+8. Add layers (the USGS map or dataset) 
+9. Create layers for viewpoints.
+10. Create viewshed Analysis with a scale (white to dark). White being higher elevation and Dark being lower elevation
+11. Create polygon of the project boundary.
+12. Find Cumulative vieeshed. This takes into consideration of all viewpoints selected and how many of those points can be seen from a viewpoint selected. 
+
 ## 2. Economic Analysis 
 
 Relevance: This method will take the 1989 Master Plan and overlay it with the most up-to-date map we have in order to assess the economic standing of the neighborhood and how the creation of the park has effected the surrounding community. 
