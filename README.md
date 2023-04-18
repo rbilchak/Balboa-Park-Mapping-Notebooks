@@ -2,13 +2,16 @@
 
 Later we can take the good info and add it to the ReadMe for the project: 
 
-## 1. Viewshed Analysis 
+## Viewshed Analysis 
 
-Relevance: This method of analysis identifies all possible viewpoints from a specific location in the project area. Below is the link to the ArcGIS Interactive Viewshed demonstration and how to apply to our project area.
+Relevance: 
+This method of analysis identifies all possible viewpoints from a specific location within a project area. The viewshed analysis will allow us to compile multiple layers (vegetation, commercial buildings, residential, etc.) to better current viewpoits/vistas and reduce any negative impacts of future construction. Below is the link to the ArcGIS Interactive Viewshed demonstration map and various tools with how to apply to the Balboa Park Project. The Interactive Viewshed model components include a color scheme (visibility patterns), parameters (angles, range, tilt), and an observer (observer placement). 
 
 [ArcGIS Interactive Viewshed Directions/Application](https://doc.arcgis.com/en/arcgis-earth/use/interactive-analysis.htm#:~:text=Viewshed%20analysis%20indicates%20the%20visibility%20%28visible%20or%20obstructed%29,in%20the%20scene%20to%20specify%20the%20observer%20position.)
 
-Using QGIS 
+[Python Elevation](https://github.com/Esri/elevation-gp-python)
+
+[The JavaScript library used to create a map and perform viewshed analysis](https://github.com/mmurillo4410/viewshed)
 
 ## 2. Economic Analysis 
 
